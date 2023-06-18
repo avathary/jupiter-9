@@ -1,0 +1,129 @@
+/* Mobile */
+
+:root {
+    --cor-primaria: #120010;
+    --cor-secundaria: #400135;
+    --cor-terciaria: #F205B3;
+    --hover: #ffffff;
+    --fonte-primaria: 'Hubballi';
+}
+
+@media screen and (max-width:1040px) {
+
+    body {
+        background: linear-gradient(180deg, #1A0010 0%, #0D0009 45.83%);  
+    }
+
+    /* Menu escondido */
+
+    .cabecalho{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: contents;
+    }
+
+    .label-menu, 
+    .checkbox {
+        display: none;
+    }
+  
+    .menu {
+        display: block;
+        position: absolute;
+        top: 4.6875rem;
+        left: 0;
+        background: linear-gradient(180deg, #1A0010 0%, #0D0009 45.83%); 
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+        
+    }
+
+    .menu a {
+        font-size: 2rem;
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid var(--cor-primaria);
+        border-radius: 0;
+    }
+
+    .label-menu{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--hover);
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburguer {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+        color: var(--hover);
+      }
+
+    .hamburguer::after,
+    .hamburguer::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .checkbox:checked ~ .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .checkbox:checked ~ .label-menu .hamburger {
+        border-top-color: transparent;
+    }
+    .checkbox:checked ~ .label-menu .hamburger::before {
+        transform: rotate(135deg);
+    }
+    .checkbox:checked ~ .label-menu .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    /* Imagem */
+
+    .logo-mobile {
+        display: contents;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-mobile {
+        max-width:100%;
+        height:auto;
+    }
+
+    /* Descrição */
+
+    .desc-mobile{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: var(--fonte-primaria);
+        font-size: 1.5rem;
+        color: var(--hover);
+    }
+
+    
+
+
+}
+

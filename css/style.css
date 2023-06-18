@@ -1,0 +1,74 @@
+/* Desktop */
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+:root {
+    --cor-primaria: #120010;
+    --cor-secundaria: #400135;
+    --cor-terciaria: #F205B3;
+    --hover: #ffffff;
+    --fonte-primaria: 'Hubballi';
+}
+
+body {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+}
+
+/* Inicio */
+
+.cabecalho{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li a{
+    text-decoration: none;
+    color: var(--hover);
+    font-family: var(--fonte-primaria);
+    font-size: 4rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+nav li a:hover {
+    background: var(--cor-secundaria);
+}
+
+hr {
+    margin: 1.563rem 0;
+	border: 0;
+	border-top: 1px solid var(--cor-terciaria);
+}
+
+.logo-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8.625rem 7.313;
+    gap: 0.625rem;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+.descricao{
+    font-family: var(--fonte-primaria);
+    font-size: 4rem;
+    color: var(--hover);
+}
+
+span {
+    color: var(--cor-terciaria);
+}
