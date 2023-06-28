@@ -1,13 +1,13 @@
-/* Desktop */
-
-@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Inter:wght@400;700&display=swap');
+  
 :root {
-    --cor-primaria: #120010;
-    --cor-secundaria: #400135;
-    --cor-terciaria: #F205B3;
-    --hover: #ffffff;
+    --preto: #120010;
+    --roxo-escuro: #1A0010;
+    --roxo-claro: #400135;
+    --rosa: #F205B3;
+    --branco: #ffffff;
     --fonte-primaria: 'Hubballi';
+    --fonte-secundaria: 'Inter'
 }
 
 body {
@@ -15,7 +15,8 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+    background: linear-gradient(180deg, var(--preto) 0%, var(--roxo-escuro) 100%);
+    font-size: 16px;
 }
 
 /* Inicio */
@@ -29,7 +30,7 @@ body {
 
 nav li a{
     text-decoration: none;
-    color: var(--hover);
+    color: var(--branco);
     font-family: var(--fonte-primaria);
     font-size: 4rem;
     padding: 1rem;
@@ -37,13 +38,13 @@ nav li a{
 }
 
 nav li a:hover {
-    background: var(--cor-secundaria);
+    background: var(--roxo-escuro);
 }
 
 hr {
     margin: 1.563rem 0;
 	border: 0;
-	border-top: 1px solid var(--cor-terciaria);
+	border-top: 1px solid var(--rosa);
 }
 
 .logo-bar{
@@ -66,9 +67,91 @@ hr {
 .descricao{
     font-family: var(--fonte-primaria);
     font-size: 4rem;
-    color: var(--hover);
+    color: var(--branco);
+    margin: 2rem;
 }
 
-span {
-    color: var(--cor-terciaria);
+.linha {
+    color: var(--rosa);
+}
+
+/*Seção de Petiscos*/
+
+.petiscos {
+    background-color: var(--roxo-escuro);
+}
+
+.navegacao-um {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-secao {
+    font-family: var(--fonte-primaria);
+    font-size: 4rem;
+    color: var(--branco);
+    font-weight: 400;
+    margin: 2rem 0rem;
+}
+
+.segunda-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.petiscos-separados {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4.36rem;
+    text-align: justify;
+}
+.texto-comidas {
+    color: var(--branco);   
+    font-size: 1.875rem;
+    font-family: var(--fonte-secundaria);
+    line-height: 1.5;
+    margin: 1rem;
+    padding: 2rem;
+    width: 85%;
+    height: 30rem;
+
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#linha {
+    height: 400px;
+    border-right: 1px solid var(--branco);
+}
+
+.preco {
+    margin: 2rem 5rem;
+    
+}
+.valor {
+    border-radius: 20px;
+    background: var(--roxo-claro);
+    padding: 0.5rem 0.1rem;
+}
+
+.valor-2 {
+    border-radius: 20px;
+    background: var(--branco);
+    padding: 0.5rem;
+    color: var(--roxo-escuro);
+}
+
+.referente {
+    padding: 0.5rem;
+}
+
+.linha-petiscos {
+    color: var(--roxo-claro);
 }
