@@ -1,5 +1,5 @@
 /* Mobile */
-@media screen and (max-width:950px) {
+@media screen and (max-width:1050px) {
 
     :root {
         --preto: #120010;
@@ -12,7 +12,7 @@
     }
 
     body {
-        background: linear-gradient(180deg, var(--roxo-escuro) 0%, var(--preto) 45.83%);  
+        background: linear-gradient(180deg, var(--roxo-escuro) 0%, var(--preto) 45.83%);
     }
 
     /* Menu escondido */
@@ -130,8 +130,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
         font-size: 2vw;
+        gap: 0;
+        margin: 0;
     }
 
       .titulo-secao {
@@ -139,17 +140,18 @@
         font-size: 10vw; 
         color: var(--branco);
         font-weight: 400;
-        margin: 2vw 2vw;
+        margin: 0;
     }
     
     .segunda-logo {
-        max-width: 100%;
+        max-width: 40%;
         height: auto;
-        width: 50%;
     }
     
-    .petiscos-separados {
+    .petiscos-container {
         flex-direction: column;
+        align-items: center;
+        text-align: justify;
         width: 100%;
         font-size: 12vw;
         padding: 2rem 0;
@@ -168,7 +170,7 @@
         background-color: var(--branco); 
     }
 
-    .texto-comidas {
+    .petiscos-box {
         padding: 0;
         margin: 0;
         text-align: justify;
@@ -176,7 +178,7 @@
         height: 80%;
     }
 
-    .titulo {
+    .petiscos-titulo {
         font-size: 5vw; 
         font-weight: 700;
     }
@@ -185,4 +187,94 @@
         margin: 1rem 0 1rem;
     }
 
+    .cervejas-secao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center ;
+        color: var(--branco);
+        gap: 0;
+        padding: 0 0 1rem 0;
+    }
+
+    .cervejas-box {
+        font-size: 1.2rem;
+    }
+
+    .cervejas-titulo {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .cervejas-container {
+        padding: 1rem;
+    }
+
+    .drinks-secao {
+        flex-direction: column;
+    }
+
+    .drinks-box {
+        flex-direction: column;
+    }
+
+    .drinks-fotos {
+        border-radius: 0.5rem;
+        max-width: 70%;
+        margin: 1rem;
+    }
+
+    .drinks-titulo {
+        font-size: 5vw;
+    }
+
+    .drinks-descricao {
+        font-size: 5vw;
+    }
+
+    .drinks-valor {
+        font-size: 5vw;
+    }
+
+    .outras-container {
+        flex-direction: column;
+    }
+
+    .doses-box {
+        gap: 0.5rem
+    }
+
+    .doses-separacao {
+        flex-direction: column;
+    }
+
+    .doses-separacao-box {
+        width: 100%;
+    }
+
+    .doses-titulo {
+        font-size: 5vw;
+    }
+
+    .doses-descricao {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .drinks-valor {
+        margin-top: 0.5rem;
+    }
+
+    .outras-box {
+        gap: 0.5rem;
+        align-items: stretch;
+    }
+
+    .outras-separacao {
+        padding: 1.5rem;
+    }
+
+    .rodape {
+        flex-direction: column;
+    }
 }
