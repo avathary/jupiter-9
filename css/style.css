@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Inter:wght@400;700&display=swap');
-@import 'css/mobile.css';
 
 :root {
     --preto: #120010;
@@ -332,6 +331,30 @@ hr {
     display: flex;
     justify-content: space-between;
     gap: 2vw;
+}
+
+/*Voltar ao topo*/
+
+#subir {
+    background-color: var(--branco);
+    border-radius: 65px;
+    bottom: 14px;
+    box-shadow: 2px 3px 19px -2px var(--preto);
+    color: var(--rosa);
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 22px;
+    width: 40px;
+    z-index: 3;
+}
+
+#subir::after {
+      content: '▲';
+      display: flex;
+      justify-content: center;
+      padding-left: 1px;
+      padding-top: 10px;
 }
 
 /* Footer */
