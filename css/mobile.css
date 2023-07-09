@@ -12,7 +12,7 @@
     }
 
     body {
-        background: linear-gradient(180deg, var(--roxo-escuro) 0%, var(--preto) 45.83%);
+        background: linear-gradient(180deg, #0D0009 0%, var(--roxo-escuro) 45.83%);
     }
 
     /* Menu escondido */
@@ -67,6 +67,7 @@
         border-top: 0.125rem solid;
         width: 1.25rem;
         color: var(--branco);
+        margin: 1rem 0 0 2rem;
       }
 
     .hamburguer::after,
@@ -82,20 +83,14 @@
     }
 
     .checkbox:checked ~ .menu {
-        height: calc(100vh - 4.6875rem);
+        height: calc(50vh - 4.6875rem);
         visibility: visible;
         overflow-y: auto;
     }
     .checkbox:checked ~ .label-menu .hamburger {
         border-top-color: transparent;
     }
-    .checkbox:checked ~ .label-menu .hamburger::before {
-        transform: rotate(135deg);
-    }
-    .checkbox:checked ~ .label-menu .hamburger::after {
-        transform: rotate(-135deg);
-        top: -0.4375rem;
-    }
+    
 
     /* Imagem */
 
@@ -187,6 +182,8 @@
         margin: 1rem 0 1rem;
     }
 
+    /* Cervejas */
+
     .cervejas-secao {
         display: flex;
         flex-direction: column;
@@ -209,6 +206,8 @@
     .cervejas-container {
         padding: 1rem;
     }
+
+    /* Drinks */
 
     .drinks-secao {
         flex-direction: column;
@@ -235,6 +234,8 @@
     .drinks-valor {
         font-size: 5vw;
     }
+
+    /* Outras Bebidas */
 
     .outras-container {
         flex-direction: column;
@@ -274,6 +275,8 @@
         padding: 1.5rem;
     }
 
+    /* Rodape */
+
     .rodape {
         flex-direction: column;
     }
@@ -281,4 +284,5 @@
     .rodape-nav {
         display: none;
     }
+
 }
