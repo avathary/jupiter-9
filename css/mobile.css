@@ -277,4 +277,8 @@
     .rodape {
         flex-direction: column;
     }
+
+    .rodape-nav {
+        display: none;
+    }
 }
